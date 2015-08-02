@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.lulius.com.placefinder.FragmentWithDetails"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSearch"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:text=""
+
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"
+            android:text="Search by name"
+            android:id="@+id/buttonSearch" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Search around me"
+            android:id="@+id/buttonSearchWithLocation" />
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:choiceMode="singleChoice">
+        >
+    </ListView>
+
+</LinearLayout>

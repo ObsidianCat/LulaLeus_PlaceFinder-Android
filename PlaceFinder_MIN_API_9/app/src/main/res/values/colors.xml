@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lightGrey" type="color">#14000000</item>
+    <item name="lightGreen" type="color">#2f34ffca</item>
+    <item name="basicBrown" type="color">#ffffe4c2</item>
+
+</resources>

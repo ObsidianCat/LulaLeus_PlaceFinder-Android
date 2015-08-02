@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.lulius.com.placefinder.SettingsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Distance units"
+        android:id="@+id/setDistance"
+        android:layout_gravity="left" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radio_group"
+        >
+        <RadioButton android:id="@+id/radio_kl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kilometers"
+            />
+        <RadioButton android:id="@+id/radio_ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="miles"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove all favorites"
+        android:id="@+id/removeFavorites" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/buttonCancel"
+            />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:id="@+id/buttonOk"
+            android:layout_gravity="right"
+
+        />
+        </LinearLayout>
+
+</LinearLayout>
